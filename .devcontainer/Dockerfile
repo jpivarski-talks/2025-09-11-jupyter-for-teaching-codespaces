@@ -1,6 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/python:3.12
 
-COPY ../requirements.txt /tmp/requirements.txt
+RUN pwd && ls -a
+
+COPY requirements.txt /tmp/requirements.txt
 
 RUN pip install jupyterlab jupyterlab-deck \
     && pip install -r /tmp/requirements.txt
