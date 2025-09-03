@@ -42,6 +42,8 @@ This automatically opens a new tab that looks like VSCode, in which the devconta
 
 **This step takes several minutes.** During that time, students might think they need to click on one of the VSCode icons—they don't, and this complexity is one of the downsides of using Codespaces for Jupyter. It's primarily intended as a code-editing environment, but we're using it as a platform to run JupyterLab.
 
+**You'll know it has finished building when progress bars are no longer streaming and the repository's README appears in the main window.**
+
 ![](img/building-codespaces.png)
 
 ### Step 3
