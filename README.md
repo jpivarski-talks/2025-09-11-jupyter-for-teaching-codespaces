@@ -26,7 +26,7 @@ All of the configuration goes in a [.devcontainer](https://github.com/jpivarski-
 
 The [devcontainer.json](https://github.com/jpivarski-talks/2025-09-11-jupyter-for-teaching-codespaces/blob/main/.devcontainer/devcontainer.json) tells Codespaces how to configure the instance—in this example, I set it to build a Docker image and run `jupyter lab` with a port open so that we can view it from a web browser. The [Dockerfile](https://github.com/jpivarski-talks/2025-09-11-jupyter-for-teaching-codespaces/blob/main/.devcontainer/Dockerfile) installs `jupyterlab`, `jupyterlab-deck`, and everything in [requirements.txt](https://github.com/jpivarski-talks/2025-09-11-jupyter-for-teaching-codespaces/blob/main/.devcontainer/requirements.txt). If you need to install from conda instead of pip, you would add `RUN` lines to install [Miniforge](https://conda-forge.org/download/) and use an [environment.yml](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) instead of `requirements.txt`. The example in this repository is the _simplest_ case.
 
-When setting up your own GitHub repository, you do not need to turn on GitHub Pages or add any GitHub Actions in "Settings", as you need to with other Jupyter installations. All you need is a plain repository with the right files in it.
+When setting up your own GitHub repository, you do not need to turn on GitHub Pages or add any GitHub Actions in "Settings", as you need to with JupyterLite. All you need is a plain repository with the right files in it.
 
 ## How to run a Codespaces instance
 
