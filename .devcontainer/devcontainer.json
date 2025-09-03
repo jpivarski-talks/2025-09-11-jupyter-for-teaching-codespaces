@@ -1,0 +1,8 @@
+{
+  "name": "Jupyter Workspace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postStartCommand": "jupyter lab --ip=0.0.0.0 --no-browser --NotebookApp.token=''",
+  "forwardPorts": [8888]
+}
